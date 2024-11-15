@@ -1,0 +1,149 @@
+###############################################################################
+## Conjunto: selectedFeaturesDataset.csv ##
+Muestras Counter({1: 114, 0: 114})
+###############################################################################
+----- Inicio del reporte 2024-11-14 20:55:53 -----
+---------------------
+RF en selectedFeaturesDataset.csv
+---------------------
+Mejores hiperparámetros:
+{'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200, 'random_state': 11}
+
+Importancia de las caracteristicas:
+ [0.02357029 0.0853556  0.10125774 0.04941479 0.04391475 0.03365454
+ 0.04948681 0.05500077 0.09682562 0.07892686 0.04961052 0.02925909
+ 0.02413889 0.03047745 0.0318219  0.04907826 0.05560166 0.03743078
+ 0.02797624 0.04028753 0.0069099 ]
+
+PR-AUC: 0.8840579710144928
+
+MCC: 0.6963106238227913
+
+Precisión: 0.8478260869565217
+
+Reporte de clasificación
+              precision    recall  f1-score   support
+
+           0       0.86      0.83      0.84        23
+           1       0.83      0.87      0.85        23
+
+    accuracy                           0.85        46
+   macro avg       0.85      0.85      0.85        46
+weighted avg       0.85      0.85      0.85        46
+
+Matriz de confusión:
+[[19  4]
+ [ 3 20]]Validación cruzada:
+Puntajes de precisión para cada pliegue:
+[0.83783784 0.72972973 0.91666667 0.94444444 0.80555556]
+
+Precisión media0.8468468468468467
+Desviación estándar de la precisión:0.07733388700711466
+
+----- Fin del reporte -----
+
+----- Inicio del reporte 2024-11-14 20:55:54 -----
+---------------------
+SVM en selectedFeaturesDataset.csv
+---------------------
+Mejores hiperparámetros:
+{'C': 0.1, 'coef0': 1, 'degree': 4, 'gamma': 0.1}
+
+
+PR-AUC: 0.8365217391304347
+
+MCC: 0.5673665146135801
+
+Precisión: 0.782608695652174
+
+Reporte de clasificación
+              precision    recall  f1-score   support
+
+           0       0.81      0.74      0.77        23
+           1       0.76      0.83      0.79        23
+
+    accuracy                           0.78        46
+   macro avg       0.78      0.78      0.78        46
+weighted avg       0.78      0.78      0.78        46
+
+Matriz de confusión:
+[[17  6]
+ [ 4 19]]Validación cruzada:
+Puntajes de precisión para cada pliegue:
+[0.83783784 0.75675676 0.88888889 0.91666667 0.77777778]
+
+Precisión media0.8355855855855856
+Desviación estándar de la precisión:0.06160549227235796
+
+----- Fin del reporte -----
+
+----- Inicio del reporte 2024-11-14 20:55:54 -----
+---------------------
+GradientBoosting en selectedFeaturesDataset.csv
+---------------------
+Mejores hiperparámetros:
+{'learning_rate': 0.1, 'max_depth': 3, 'min_samples_split': 3, 'n_estimators': 200}
+
+
+PR-AUC: 0.8965378421900162
+
+MCC: 0.7505683356701914
+
+Precisión: 0.8695652173913043
+
+Reporte de clasificación
+              precision    recall  f1-score   support
+
+           0       0.95      0.78      0.86        23
+           1       0.81      0.96      0.88        23
+
+    accuracy                           0.87        46
+   macro avg       0.88      0.87      0.87        46
+weighted avg       0.88      0.87      0.87        46
+
+Matriz de confusión:
+[[18  5]
+ [ 1 22]]Validación cruzada:
+Puntajes de precisión para cada pliegue:
+[0.89189189 0.7027027  0.83333333 0.86111111 0.83333333]
+
+Precisión media0.8244744744744745
+Desviación estándar de la precisión:0.06461064072779046
+
+----- Fin del reporte -----
+
+----- Inicio del reporte 2024-11-14 20:56:01 -----
+---------------------
+MLP en selectedFeaturesDataset.csv
+---------------------
+Mejores hiperparámetros:
+{'batch_size': 16, 'epochs': 30, 'model__dropout': 0.25, 'model__hidden_layer_sizes': (64, 32, 16, 8), 'model__opt': 'rmsprop', 'optimizer__lr': 0.001}
+
+
+PR-AUC: 0.8365217391304347
+
+MCC: 0.5673665146135801
+
+Precisión: 0.7969969969969971
+
+Reporte de clasificación
+              precision    recall  f1-score   support
+
+           0       0.81      0.74      0.77        23
+           1       0.76      0.83      0.79        23
+
+    accuracy                           0.78        46
+   macro avg       0.78      0.78      0.78        46
+weighted avg       0.78      0.78      0.78        46
+
+Matriz de confusión:
+[[17  6]
+ [ 4 19]]Validación cruzada:
+Puntajes de precisión para cada pliegue:
+[0.7027027  0.7027027  0.75       0.88888889 0.69444444]
+
+Precisión media0.7477477477477477
+Desviación estándar de la precisión:0.0732464998100189
+
+----- Fin del reporte -----
+
